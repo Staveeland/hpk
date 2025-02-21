@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt Oss - Haugesund Pistolklubb</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="HPK Logo">
+                <h1>HPK</h1>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Hjem</a>
+            <a href="activities.html">Aktiviteter</a>
+            <a href="membership.html">Medlemskap</a>
+            <a href="schedule.html">Terminliste</a>
+            <a href="contact.html">Kontakt</a>
+        </div>
+        <div class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <h1>Kontakt Oss</h1>
+
+        <section class="contact-section">
+            <div class="contact-info-grid">
+                <!-- First row -->
+                <div class="info-card location">
+                    <h2><i class="fas fa-map-marker-alt"></i> Besøksadresse</h2>
+                    <p>Haugesund Pistolklubb</p>
+                    <p>Hanne Hauglands veg 2</p>
+                    <p>5519 Haugesund</p>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2022.8876935233844!2d5.2986673!3d59.3778799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463b9f6797f893f9%3A0xf28c12f1d3813235!2sHanne%20Hauglands%20veg%202%2C%205519%20Haugesund!5e0!3m2!1sno!2sno!4v1708502400000!5m2!1sno!2sno" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="info-card contact-details">
+                    <h2><i class="fas fa-info-circle"></i> Kontaktinformasjon</h2>
+                    <div class="contact-details-content">
+                        <p><i class="fas fa-at"></i>haupk@haugesund-pistolklubb.no</p>
+                        <p><i class="fas fa-id-card"></i> Org. nr.: 993 498 610</p>
+                        <p><i class="fas fa-university"></i> Kontonr.: 3626.33.43608</p>
+                    </div>
+                </div>
+
+                <!-- Second row -->
+                <div class="info-card contact-persons">
+                    <h2><i class="fas fa-users"></i> Kontaktpersoner</h2>
+                    <div class="contact-persons-grid">
+                        <div class="contact-person">
+                            <h3>Hovedkontakt</h3>
+                            <p><i class="fas fa-user"></i> Reidun Ann Støle</p>
+                            <p><i class="fas fa-phone"></i> 90 54 21 92</p>
+                        </div>
+                        <div class="contact-person">
+                            <h3>Westerngruppen</h3>
+                            <p><i class="fas fa-user"></i> Tore Martinsen</p>
+                            <p><i class="fas fa-phone"></i> 98 23 74 24</p>
+                        </div>
+                        <div class="contact-person">
+                            <h3>Svartkruttgruppen</h3>
+                            <p><i class="fas fa-user"></i> Tore Martinsen</p>
+                            <p><i class="fas fa-phone"></i> 98 23 74 24</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Third row -->
+                <div class="info-card contact-form-card">
+                    <h2><i class="fas fa-envelope"></i> Send oss en melding</h2>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Navn</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-post</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Emne</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Velg emne</option>
+                                <option value="general">Generell henvendelse</option>
+                                <option value="membership">Medlemskap</option>
+                                <option value="training">Trening og kurs</option>
+                                <option value="competition">Konkurranser</option>
+                                <option value="western">Western/Svartkrutt</option>
+                                <option value="other">Annet</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Melding</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="cta-button">Send melding</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2>Ofte stilte spørsmål</h2>
+            <div class="faq-grid">
+                <div class="faq-card">
+                    <h3>Hvordan blir jeg medlem?</h3>
+                    <p>For å bli medlem må du først gjennomføre et sikkerhetskurs. Se vår <a href="membership.html">medlemskapsside</a> for mer informasjon.</p>
+                </div>
+                <div class="faq-card">
+                    <h3>Når er det trening?</h3>
+                    <p>Vi har faste treningstider for ulike grener. Sjekk vår <a href="schedule.html">terminliste</a> for detaljert oversikt.</p>
+                </div>
+                <div class="faq-card">
+                    <h3>Har dere utlånsvåpen?</h3>
+                    <p>Ja, klubben har utlånsvåpen tilgjengelig for nye medlemmer under opplæring og trening.</p>
+                </div>
+                <div class="faq-card">
+                    <h3>Hva koster det?</h3>
+                    <p>Medlemskontingenten varierer basert på medlemstype. Se <a href="membership.html">priser og medlemskap</a> for detaljer.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Kontakt Oss</h3>
+                <p>Email: haupk@haugesund-pistolklubb.no</p>
+                <p>Adresse: Hanne Hauglands veg 2, 5519 Haugesund</p>
+            </div>
+            <div class="footer-section">
+                <h3>Følg Oss</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Haugesund Pistolklubb. Alle rettigheter reservert.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
