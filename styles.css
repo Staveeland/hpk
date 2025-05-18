@@ -236,6 +236,25 @@ body {
     margin-bottom: 0.5rem;
 }
 
+/* Calendar Section */
+.calendar-section {
+    padding: 5rem 5%;
+}
+
+.calendar-container {
+    margin-top: 2rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-container iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+    display: block;
+}
+
 /* Footer */
 footer {
     background-color: var(--primary-color);
@@ -1099,6 +1118,10 @@ button.cta-button:hover {
 
     .map-container iframe {
         height: 250px;
+    }
+
+    .calendar-container iframe {
+        height: 450px;
     }
 
     .contact-person {
